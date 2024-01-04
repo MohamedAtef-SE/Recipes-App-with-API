@@ -1,0 +1,16 @@
+1) after displayAllMeals() Use || allMeals[i].recipe_id || to get all recipe_id from all  displayed Meals and store it in arrOfRecipeID.
+
+2) using for loop await fetch recipe_id to get Ingerdients for each displayed meal and store it in var response.
+
+3) store await reponse.json() in var ObjectOfRecipeDetails;
+
+4) store each recipe details as an objects came from fetch in array of objects in arrOfRecipeDetails.push(ObjectOfRecipeDetails)
+
+
+
+=== Phase II Recipe-Btn clicked ===
+5) var arrOfIngredients =  arrOfRecipeDetails[i].ingredients 
+
+6) create loop for arrOfIngredients[i] each iterator represent <li> ingredients 01 </li> and concat each <li> in container
+
+7) represent the container in ul.innerHTML
