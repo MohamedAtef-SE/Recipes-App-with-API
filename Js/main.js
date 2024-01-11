@@ -121,7 +121,7 @@ function displayAllMeals() {
     var container = '';
     for (var i = 0; i < allMeals.length; i++) {
         container += `
-        <div class="col-3 my-3">
+        <div class="col-lg-3 col-sm-6 my-3">
         <figure>
             <a target="_blank" href="${allMeals[i].source_url}">
                 <img class="w-100" src="${allMeals[i].image_url}" alt="burger, burger recipe">

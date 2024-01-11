@@ -19,9 +19,10 @@
 </head>
 
 <body>
-    <div class="container py-5">
-        <h1 class="text-center fw-bolder text-dark"><span class="text-danger">B</span>elly <span
-                class="text-danger">F</span>ully with ...
+    <header></header>
+    <main class="container pb-5 mt-5">
+        <h1 class="text-center fw-bolder text-dark mb-3"><span class="text-danger">F</span>ind <span
+                class="text-danger">Y</span>our Recipe ...
             <span class="faceReact text-danger"><i class="fa-solid fa-face-rolling-eyes"></i></span>
         </h1>
         <div class="searchTab m-auto d-flex align-items-start justify-content-center">
@@ -35,34 +36,110 @@
             <button id="searchBtn" class="btn btn-danger text-warning py-2 px-4 m-2"><i
                     class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-
-        <div class="row py-5"></div>
-
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content bg-danger">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5 text-warning fw-bold" id="exampleModalLabel">Best Pizza Dough Ever</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h3>Ingredients</h3>
-                    <ul class="ing-list list-unstyled">
-                        <li class="mb-1">4 1/2 cups (20.25 ounces) unbleached high-gluten, bread, or all-purpose flour,
-                            chilled</li>
-                        <li class="mb-1">1 3/4 (.44 ounce) teaspoons salt</li>
-                        <li class="mb-1">1 teaspoon (.11 ounce) instant yeast</li>
-                        <li class="mb-1">1/4 cup (2 ounces) olive oil (optional)</li>
-                        <li class="mb-1">1 3/4 cups (14 ounces) water, ice cold (40F)</li>
-                        <li class="mb-1">Semolina flour OR cornmeal for dusting</li>
-                    </ul>
+        <div class="displayRecipe row py-5 min-vh">
+            <div class="col-lg-3 col-sm-6 my-3">
+                <figure>
+                    <a target="_blank" href="">
+                        <img class="w-100" src="./Images/1.jpg" alt="burger, burger recipe">
+                    </a>
+                    <figcaption class="p-3 bg-danger">
+                        <h2 class="h5 text-center fw-bold text-warning">Title
+                            <span class="fw-normal h6 d-block pt-2"> - <a class="text-light" target="_blank"
+                                    href="">Publisher</a></span>
+                        </h2>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn-getRecipe d-block btn btn-warning mt-3 m-auto"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Get Recipe
+                        </button>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-sm-6 my-3">
+                <figure>
+                    <a target="_blank" href="">
+                        <img class="w-100" src="./Images/2.jpg" alt="burger, burger recipe">
+                    </a>
+                    <figcaption class="p-3 bg-danger">
+                        <h2 class="h5 text-center fw-bold text-warning">Title
+                            <span class="fw-normal h6 d-block pt-2"> - <a class="text-light" target="_blank"
+                                    href="">Publisher</a></span>
+                        </h2>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn-getRecipe d-block btn btn-warning mt-3 m-auto"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Get Recipe
+                        </button>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-sm-6 my-3">
+                <figure>
+                    <a target="_blank" href="">
+                        <img class="w-100" src="./Images/3.jpg" alt="burger, burger recipe">
+                    </a>
+                    <figcaption class="p-3 bg-danger">
+                        <h2 class="h5 text-center fw-bold text-warning">Title
+                            <span class="fw-normal h6 d-block pt-2"> - <a class="text-light" target="_blank"
+                                    href="">Publisher</a></span>
+                        </h2>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn-getRecipe d-block btn btn-warning mt-3 m-auto"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Get Recipe
+                        </button>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-sm-6 my-3">
+                <figure>
+                    <a target="_blank" href="">
+                        <img class="w-100" src="./Images/4.jpg" alt="burger, burger recipe">
+                    </a>
+                    <figcaption class="p-3 bg-danger">
+                        <h2 class="h5 text-center fw-bold text-warning">Title
+                            <span class="fw-normal h6 d-block pt-2"> - <a class="text-light" target="_blank"
+                                    href="">Publisher</a></span>
+                        </h2>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn-getRecipe d-block btn btn-warning mt-3 m-auto"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Get Recipe
+                        </button>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-danger">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-warning fw-bold" id="exampleModalLabel">Best Pizza Dough Ever
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Ingredients</h3>
+                        <ul class="ing-list list-unstyled">
+                            <li class="mb-1">4 1/2 cups (20.25 ounces) unbleached high-gluten, bread, or all-purpose
+                                flour,
+                                chilled</li>
+                            <li class="mb-1">1 3/4 (.44 ounce) teaspoons salt</li>
+                            <li class="mb-1">1 teaspoon (.11 ounce) instant yeast</li>
+                            <li class="mb-1">1/4 cup (2 ounces) olive oil (optional)</li>
+                            <li class="mb-1">1 3/4 cups (14 ounces) water, ice cold (40F)</li>
+                            <li class="mb-1">Semolina flour OR cornmeal for dusting</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </main>
+    <footer class="bg-danger text-warning p-4 m-0">
+        <p class="text-center m-0">&copy; <span class="fw-bolder text-black">Mohamed Atef</span> All Rights Reserved
+        </p>
+    </footer>
     <script src="./Js/bootstrap.bundle.min.js"></script>
     <script src="./Js/main.js"></script>
 </body>
