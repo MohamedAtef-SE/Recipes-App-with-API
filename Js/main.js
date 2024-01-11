@@ -29,7 +29,7 @@ searchTab.addEventListener('keyup', function () {
     var container = '';
     if (searchTab.value != '') {
         for (var i = 0; i < availableSearchQueries.length; i++) {
-            if (availableSearchQueries[i].includes(searchTab.value)) {
+            if (availableSearchQueries[i].includes(searchTab.value.toLowerCase())) {
                 container += `
                     <tr>
                                 <td class="px-4">${availableSearchQueries[i]}</td>
